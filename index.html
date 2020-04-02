@@ -4,19 +4,108 @@
     <meta charset="utf-8">
     <title>Elian's page</title>
       <link href="styles/style.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!--區塊-->  
+      <style>
+          #topbar { background-color:pink; color:black; padding:10px; margin:10px; }
+          .classA { background-color:pink; color:black; padding:10px; margin:10px; }
+          .classB { background-color:pink; color:yellow; padding:10px; margin:10px; }
+      </style>  
+      
+     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+          body { padding-top: 70px; padding-bottom: 30px; }
+          #board td   { width:20px; height:20px; color:#336699; }
+      </style>
+      
+      
+      
   </head>
+    
+    
     
   <body>
       <h1>Hello everyone! Welcome to Elian's page </h1>
       <h2>I'm a student from Taiwan.</h2>     
-      <p>For me:</p>
+      <p>2020.04.02</p>
+<!--項目-->  
       <ul> 
         <li>technologists</li>
         <li>thinkers</li>
         <li>builders</li>
       </ul>
+<!--區塊-->       
+<div id="topbar">相關連結</div>
+<!--超連結-->  
       <a href="https://github.com/jychen0611">MyGithub</a> 
-    <img src="images/sky.jpg" alt="This image is beautiful!">
+
+
+<!--區塊-->       
+<div class="classA">五子棋盤</div>
+<!--五子棋-->
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">五子棋</a>
+        </div>
+   </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <table class="table table-bordered">
+            <tbody id="board">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+var turn = 'Ｏ';
+var isGameOver = false;
+var rows=15, cols=20;
+
+function newBoard() {
+  var boardHtml = '';
+  for (var x=0; x<rows; x++) {
+    var rowHtml = '<tr>';
+    for (var y=0; y<cols; y++) {
+      rowHtml += '<td id="'+x+'_'+y+'">　</td>';
+    }
+    rowHtml += '</tr>';
+    boardHtml += rowHtml;
+  }
+  return boardHtml;
+}
+
+$(document).ready(function() {
+  var boardHtml = newBoard();
+  $('#board').html(boardHtml);
+  $('#board td').mousedown(function () {
+    if (isGameOver) return;
+    var id = $(this).attr("id");
+    var v = $('#'+id).html();
+    if (v==='Ｏ' || v==='Ｘ') return;
+    $(this).html(turn);
+    turn = (turn==='Ｏ')?'Ｘ':'Ｏ';
+  });
+});
+    </script>     
+<!--區塊--> 
+<div class="classB"></div>
+
+<!--圖片-->  
+      <img src="images/sky.jpg" alt="This image is beautiful!">
       
       
       <button>Change user</button>

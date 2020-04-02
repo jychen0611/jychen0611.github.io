@@ -6,10 +6,10 @@ var myImage = document.querySelector('img');
 
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/sky.jpg') {
-      myImage.setAttribute ('src','images/ELIAN.png');
-    } else {
+    if(mySrc === 'images/ELIAN.png') {
       myImage.setAttribute ('src','images/sky.jpg');
+    } else {
+      myImage.setAttribute ('src','images/ELIAN.png');
     }
 }
 

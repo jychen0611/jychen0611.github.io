@@ -9,7 +9,7 @@
       <style>
           #topbar { background-color:pink; color:black; padding:10px; margin:10px; }
           .classA { background-color:pink; color:black; padding:10px; margin:10px; }
-          .classB { background-color:pink; color:yellow; padding:10px; margin:10px; }
+          .classB { background-color:pink; color:black; padding:10px; margin:10px; }
       </style>  
       
      <!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->
@@ -35,11 +35,21 @@
         <li>thinkers</li>
         <li>builders</li>
       </ul>
+
 <!--區塊-->       
 <div id="topbar">相關連結</div>
 <!--超連結-->  
       <a href="https://github.com/jychen0611">MyGithub</a> 
-
+ <!--區塊--> 
+<div class="classB">來點音樂</div>     
+<!--音樂-->      
+     <div data-video="LxkEr-3GCGU"  
+        data-autoplay="0"         
+        data-loop="1"             
+        id="youtube-audio">
+      </div>
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
 
 <!--區塊-->       
 <div class="classA">五子棋盤</div>
@@ -101,8 +111,6 @@ $(document).ready(function() {
   });
 });
     </script>     
-<!--區塊--> 
-<div class="classB"></div>
 
 <!--圖片-->  
       <img src="images/sky.jpg" alt="This image is beautiful!">

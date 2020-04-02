@@ -1,7 +1,7 @@
 /*document.querySelector('html').onclick = function() {
     alert('Ouch! Stop poking me!');
 }*/
-
+//點擊切換圖片
 var myImage = document.querySelector('img');
 
 myImage.onclick = function() {

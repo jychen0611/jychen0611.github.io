@@ -1,6 +1,7 @@
 html {
   background-color: #00539F;
 }
+
 body {
   width: 1300px;
   margin: 0 auto;
@@ -17,9 +18,9 @@ h1{
   width: 600px;
   border: 2px solid pink;
 }
-h2,h3,h4,h5,h6,ul{
+h2,h3,h4,h5,h6,ul,table,form,p,nav{
     color: pink;
 }
-p {
-  color: pink;
+a {
+  color: red;
 }

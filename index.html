@@ -54,4 +54,35 @@
       <button>Change user</button>
       <script src="scripts/main.js"></script>
   </body>
+<script type="text/javascript">    
+    window.onload=function(){
+        setFontSize();
+    }
+    window.onresize=function(){
+        setFontSize();
+    }
+    var setFontSize = function(){
+        
+        var width = document.documentElement.clientWidth;//獲取頁面可見寬度
+
+        if(width>320){
+
+        var w = width/32
+
+        var html = document.getElementsByTagName('html')[0];
+
+        html.style.fontSize = w+'px';
+
+        }else{
+
+        //alert("此螢幕大小不支持")
+
+        }
+
+    }
+</script>
+
+ 
+    
+    
 </html>

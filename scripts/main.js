@@ -16,7 +16,8 @@ myImage.onclick = function() {
 // Personalized welcome message code
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
-function setUserName() {
+
+/*function setUserName() {
   let myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
   myHeading.innerHTML ='Hello ' + storedName + "! Welcome to Elian's page";
@@ -29,5 +30,5 @@ if(!localStorage.getItem('name')) {
 }
 myButton.onclick = function() {
   setUserName();
-}
+}*/
 

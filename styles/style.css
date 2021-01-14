@@ -8,6 +8,7 @@ body {
   background-color:white;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
+  font-family: Comic Sans MS,monospace;
 }
 img {
   display: block;
@@ -16,10 +17,13 @@ img {
 h1{
   color: black;
   width: 600px;
-  border: 2px solid pink;
+  font-family:  Comic Sans MS,monospace ;
+  
 }
 h2,h3,h4,h5,h6,ul,table,form,p,nav{
     color: black;
+    font-family: Comic Sans MS,monospace;
+   /* border: 2px solid pink;*/
 }
 a {
   color: green;

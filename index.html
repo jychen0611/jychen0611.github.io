@@ -16,18 +16,19 @@
     
     
   <body>
-      <h1>Hello everyone!</h1>
+      <h2>Hello everyone!</h2>
       <h2>This is Elian's blog.</h2>     
       <p>start from 2020.04.02</p>
+<div id="topbar">About Me</div>
 <!--項目-->  
       <ul> 
-        <li></li>
+        <li>A college student major in computer science.</li>
         <li></li>
         <li></li>
       </ul>
 
 <!--區塊-->       
-<div id="topbar">相關連結</div>
+<div id="topbar">Links</div>
 <!--超連結-->  
       <a href="https://github.com/jychen0611">MyGithub</a><br> 
       <a href="https://leetcode.com/jychen0611/">MyLeetCode</a><br> 
@@ -51,36 +52,37 @@
       <img src="images/sky.jpg" alt="This image is beautiful!">
       
       
-      <button>Change user</button>
+     <!-- <button>Change user</button>-->
       <script src="scripts/main.js"></script>
   </body>
-<script type="text/javascript">    
-    window.onload=function(){
-        setFontSize();
-    }
-    window.onresize=function(){
-        setFontSize();
-    }
-    var setFontSize = function(){
-        
-        var width = document.documentElement.clientWidth;//獲取頁面可見寬度
+    
+    <script type="text/javascript">    
+        window.onload=function(){
+            setFontSize();
+        }
+        window.onresize=function(){
+            setFontSize();
+        }
+        var setFontSize = function(){
 
-        if(width>320){
+            var width = document.documentElement.clientWidth;//獲取頁面可見寬度
 
-        var w = width/32
+            if(width>320){
 
-        var html = document.getElementsByTagName('html')[0];
+            var w = width/32
 
-        html.style.fontSize = w+'px';
+            var html = document.getElementsByTagName('html')[0];
 
-        }else{
+            html.style.fontSize = w+'px';
 
-        //alert("此螢幕大小不支持")
+            }else{
+
+            //alert("此螢幕大小不支持")
+
+            }
 
         }
-
-    }
-</script>
+    </script>
 
  
     
